@@ -1,0 +1,243 @@
+.container {
+  margin: 15vh auto 0 140px;
+  width: 400px;
+  height: 220px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  position:absolute ;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+p{
+  font-size: xx-small;
+}
+
+#signin {
+  width: 200px;
+  height: 250px;
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 10px;
+  transition: transform 0.5s linear;
+  margin: 10px;
+  position: relative;
+  bottom: 30px;
+  right:15px;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 2px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: ;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border: 0.05px solid black;
+}
+input {
+  background-color: #f8f9fa;
+  border-radius: 2px;
+  width:150px;
+  heigth:15px;
+  padding:0;
+  border:0;
+  margin-bottom: 0px;
+}
+input:focus{
+    outline: 0;
+}
+input::placeholder {
+  font-size: xx-small;
+}
+
+#forms{
+  display:flex;
+  flex-direction: column ;
+  align-items: center;
+  gap:0px;
+}
+.akative {
+  transform: translateX(200px);
+}
+
+.apative {
+  transform: translateX(0px);
+}
+
+#purple {
+  width: 200px;
+  height: 220px;
+  background-color: #826aed;
+  text-align: center;
+  border-radius: 80px 20px 20px 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  left:197px ;
+  bottom:300px; 
+  transition: transform 0.5s linear;
+}
+
+.active {
+  transform: translateX(-205px);
+  animation: curves 0.5s linear;
+}
+.deactive {
+  transform: translateX(2px);
+  animation: recurves 0.5s linear;
+}
+
+.slide {
+  animation: slide1 0.4s linear;
+}
+
+.slider {
+  animation: slide2 0.25s linear;
+}
+
+.slide3 {
+  animation: slide3 0.4s linear;
+}
+
+.slide4 {
+  animation: slide4 0.25s linear;
+}
+
+#hello {
+  background-color: transparent;
+  color: white;
+  padding-top: 25px;
+}
+
+#granted {
+  position: relative;
+  top: 10px;
+}
+
+#forgot {
+  font-size: xx-small;
+  position:relative;
+  top:10px;
+
+}
+
+#password{
+  font-size: xx-small;
+  position: relative;
+  bottom: 10px;
+}
+
+#forgot1 {
+  width: 145px;
+  height: 15px;
+  font-size: xx-small;
+  position: relative;
+  bottom: 20px;
+}
+
+#btn {
+  margin-top: 0px;
+  background-color: #826aed;
+  border-radius: 5px;
+  font-size: xx-small;
+  width: 80px;
+  height: 20px;
+  padding: 1px;
+  border:0;
+  color:white;
+}
+
+#btn1 {
+  margin-top: 0px;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: XX-small;
+  width: 80px;
+  height: 20px;
+  position: relative;
+  bottom: 5px;
+  color:white;
+}
+
+@keyframes curves {
+  0% {
+    border-radius: 80px 20px 20px 50px;
+    
+  }
+  25% {
+    border-radius: 40px 20px 20px 40px;
+  }
+  50% {
+    border-radius: 20px 20px 20px 20px;
+  }
+  75% {
+    border-radius: 20px 40px 40px 20px;
+  }
+  100% {
+    border-radius: 20px 80px 50px 20px;
+    
+  }
+}
+
+@keyframes recurves {
+  0% {
+    border-radius: 20px 80px 50px 20px;
+  }
+  25% {
+    border-radius: 20px 40px 40px 20px;
+  }
+  50% {
+    border-radius: 20px 20px 20px 20px;
+  }
+  75% {
+    border-radius: 40px 20px 20px 40px;
+  }
+  100% {
+    border-radius: 80px 20px 20px 50px;
+  }
+}
+
+@keyframes slide1 {
+  from {
+    transform: translateX(40px);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}
+
+@keyframes slide2 {
+  from {
+    transform: translateX(-250px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slide3 {
+  from {
+    transform: translateX(40px);
+  }
+  to {
+    transform: translateX(-500px);
+  }
+}
+
+@keyframes slide4 {
+  from {
+    transform: translateX(400px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
